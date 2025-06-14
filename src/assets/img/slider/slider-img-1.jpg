@@ -1,0 +1,2518 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Slider Maker - Free Generator Tool</title>
+    <meta name="description" content="Generate a jQuery, CSS3 image slider for your website or blog in seconds. This online tool makes it easy to create an image or content slideshow." />
+    <meta name="keywords" content="jquery slider, image slider, slider generator, content slider, slider maker, carousel, JavaScript slider, photo slider, jquery scroller, jquery slideshow, designer, zip download" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://imageslidermaker.com/v2">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="stylesheet" href="/jquery.mobile/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="/jquery/css/jquery.fileupload-ui.css" />
+    <link rel="stylesheet" href="/css/site.css"/>
+
+    <style id="ism-dynamic-style">
+      
+
+/*
+.ism-slider {
+  width: 100%;
+  height: 184.797px;
+  overflow: hidden;
+  border-radius: 7px;
+  padding: 0 !important;
+  border: 2px solid red;
+}
+
+.ism-slider > ol {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ism-slider > ol > li > img {
+  display: block;
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+    </style>
+
+    <style>
+      .ism-caption {
+        visibility: visible;
+      }
+    </style>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="/jquery/jquery-plugins.js"></script>
+
+
+    <script>
+      WebFontConfig = {
+        //typekit: { id: 'xxxxxx' }
+      };
+
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                  '://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+
+    <script>
+      window.ISM = window.ISM || {};
+      window.ISM.Config = window.ISM.Config || {no_instantiation:true};
+    </script>
+        <script src="/ism/js/ism-2.2.min.js"></script>
+    <script src="/js/ism-gen-2.2.min.js"></script>
+
+
+    <script>
+      $(document).on("pagecreate", function() {
+        //console.log(window.ISM.Slider);
+        if(window.ISM.Slider && window.ISMGen)
+        {
+          var ism_slider = new ISM.Slider("my-slider", {
+            // default options
+            prevent_stop_loading: true
+          });
+          var ism_gen = new ISMGen(ism_slider, {
+          });
+          //console.log("OK");
+        }
+        else
+        {
+          $("#page-load-error-message").show();
+        }
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <div class="header">
+
+  <div class="container">
+
+    <div class="header-inner">
+      <div class="menu">
+        <ul>
+          <li><a class="menu-make" href="/v2" data-ajax="false" title="Make your slider"><span class="icon icon-16 icon-dim icon-edit">&nbsp;</span><span class="text"> Make your slider</span></a></li>
+          <li><a class="menu-gallery" href="/gallery" data-ajax="false" title="Live demo gallery"><span class="icon icon-16 icon-dim icon-gallery">&nbsp;</span><span class="text"> Gallery</span></a></li>
+        </ul>
+      </div>
+
+      <a id="logo" href="/" data-ajax="false"><img src="/img/logo.png" alt="Image Slider Maker logo" /></a>
+    </div>
+
+  </div>
+
+</div>
+
+
+    <noscript>
+      <div>
+        <p>Sorry, <b>JavaScript is required for the generator tool on this page to work</b>.</p>
+        <p>Please make sure JavaScript and cookies are enabled in your browser settings.</p>
+        <p>If you continue to have problems please <a href="/contact">contact us</a>.</p>
+      </div>
+    </noscript>
+
+    <div id="page-load-error-message" style="display: none;">
+      <p>Sorry, a problem has occurred. Please make sure JavaScript is enabled in your browser settings and that your Internet connection is stable.</p>
+      <p>If you continue to have problems please <a href="/contact">contact us</a>.</p>
+    </div>
+
+    <div class="wrap">
+
+      <div class="slider-preview-container">
+
+        <div class="ism-slider" id="my-slider">
+          <ol>
+            <li>
+              <img src="ism/image/slides/flower-729514_1280.jpg" alt="Slide 1 - Flower" />
+              <div class="ism-caption ism-caption-0" style="visibility:hidden;">Slide 1 caption text</div>
+            </li>
+            <li>
+              <img src="ism/image/slides/beautiful-701678_1280.jpg" alt="Slide 2 - Another flower" />
+              <div class="ism-caption ism-caption-0" style="visibility:hidden;">Slide 2 caption text</div>
+            </li>
+            <li>
+              <img src="ism/image/slides/summer-192179_1280.jpg" alt="Slide 3 - Field and blue sky" />
+              <div class="ism-caption ism-caption-0" style="visibility:hidden;">Slide 3 caption text</div>
+            </li>
+          </ol>
+        </div>
+
+      </div> <!-- end of slider-preview-container -->
+
+      <div class="tool-container">
+
+        <div class="look-and-feel-controls">
+          <div class="col col-1-3 col-1">
+
+            <div class="control-field control-field-slide-index">
+              <div class="col col-2-3 slide-buttons-container">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" class="slide-change-buttons-1-5">
+                  <input type="radio" name="slide-index" id="slide-index-0" value="0" checked="checked">
+                  <label for="slide-index-0">1</label>
+                  <input type="radio" name="slide-index" id="slide-index-1" value="1">
+                  <label for="slide-index-1">2</label>
+                  <input type="radio" name="slide-index" id="slide-index-2" value="2">
+                  <label for="slide-index-2">3</label>
+                  <input type="radio" name="slide-index" id="slide-index-3" value="3">
+                  <label for="slide-index-3">4</label>
+                  <input type="radio" name="slide-index" id="slide-index-4" value="4">
+                  <label for="slide-index-4">5</label>
+                </fieldset>
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" style="display:none;" class="slide-change-buttons-6-10">
+                  <input type="radio" name="slide-index" id="slide-index-5" value="5">
+                  <label for="slide-index-5">6</label>
+                  <input type="radio" name="slide-index" id="slide-index-6" value="6">
+                  <label for="slide-index-6">7</label>
+                  <input type="radio" name="slide-index" id="slide-index-7" value="7">
+                  <label for="slide-index-7">8</label>
+                  <input type="radio" name="slide-index" id="slide-index-8" value="8">
+                  <label for="slide-index-8">9</label>
+                  <input type="radio" name="slide-index" id="slide-index-9" value="9">
+                  <label for="slide-index-9">10</label>
+                </fieldset>
+              </div>
+              <div class="col col-1-3">
+                <div class="control-field control-field-slide-add-remove" data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <a data-role="button" href="#" class="slide-remove-button"><span class="icon icon-16 icon-slide-remove" title="remove slide">&nbsp;</span></a>
+                  <a data-role="button" href="#" class="slide-add-button"><span class="icon icon-16 icon-slide-add" title="add slide">&nbsp;</span></a>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+
+            <!-- SLIDE TABS -->
+            <div class="slide-image-caption-tabs">
+              <div class="control-field control-field-slide-tabs">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <input type="radio" name="slide-tab" id="slide-tab-image" value="image" checked="checked">
+                  <label for="slide-tab-image"><span class="icon icon-32x16 icon-bright icon-image-tab" title="image">&nbsp;</span></label>
+                  <input type="radio" name="slide-tab" id="slide-tab-caption-0" value="caption-0" data-caption-index="0">
+                  <label for="slide-tab-caption-0"><span class="icon icon-32x16 icon-caption-tab-1" title="caption 1">&nbsp;</span></label>
+                  <input type="radio" name="slide-tab" id="slide-tab-caption-1" value="caption-1" data-caption-index="1">
+                  <label for="slide-tab-caption-1"><span class="icon icon-32x16 icon-caption-tab-2" title="caption 2">&nbsp;</span></label>
+                  <input type="radio" name="slide-tab" id="slide-tab-caption-2" value="caption-2" data-caption-index="2">
+                  <label for="slide-tab-caption-2"><span class="icon icon-32x16 icon-caption-tab-3" title="caption 3">&nbsp;</span></label>
+                </fieldset>
+              </div>
+              <a class="help" href="#doc-slides" title="Learn how to edit, add and remove slides." data-ajax="false">?</a>
+            </div>
+
+            <div class="controls-group controls-group-slides">
+
+              <div class="slide-image-tab-content">
+                <!-- IMAGE POSITIONING -->
+                <div class="control-field-image-positioning">
+                  <div class="col col-1-5">
+                    <div class="control-field">
+                      <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                        <legend>Image Fit</legend>
+                        <input type="radio" name="slide-image-fit" id="slide-image-fit-width" value="width" checked="checked">
+                        <label for="slide-image-fit-width"><span class="icon icon-16 icon-image-fit-width" title="fit image to slider width">&nbsp;</span></label>
+                        <input type="radio" name="slide-image-fit" id="slide-image-fit-height" value="height">
+                        <label for="slide-image-fit-height"><span class="icon icon-16 icon-image-fit-height" title="fit image to slider height">&nbsp;</span></label>
+                        <input type="radio" name="slide-image-fit" id="slide-image-fit-stretch" value="stretch">
+                        <label for="slide-image-fit-stretch"><span class="icon icon-16 icon-image-fit-stretch" title="stretch image to slider width and height">&nbsp;</span></label>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="col col-3-5">
+                    <div class="control-field">
+                      <div class="slide-image-positioner">
+                        <img src="ism/image/slides/flower-729514_1280.jpg" />
+                        <div class="image-frame"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-1-5">
+                    <div class="control-field control-field-slide-image-align">
+                      <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                        <legend>Image Align</legend>
+                        <input type="radio" name="slide-image-align" id="slide-image-align-start" value="start">
+                        <label for="slide-image-align-start"><span class="icon icon-16 icon-image-align-top" title="align start">&nbsp;</span></label>
+                        <input type="radio" name="slide-image-align" id="slide-image-align-middle" value="middle" checked="checked">
+                        <label for="slide-image-align-middle"><span class="icon icon-16 icon-image-align-middle" title="align middle">&nbsp;</span></label>
+                        <input type="radio" name="slide-image-align" id="slide-image-align-end" value="end">
+                        <label for="slide-image-align-end"><span class="icon icon-16 icon-image-align-bottom" title="align end">&nbsp;</span></label>
+                      </fieldset>
+
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+
+                <!-- IMAGE SELECTION -->
+                <div class="control-field-image-selection">
+                  <div>
+
+                    <div class="imageselect-upload">
+                      <div class="col col-2-5">
+                        <span id="imageselect-upload-button" class="fileinput-button ui-btn ui-mini ui-corner-all">
+                          <i class="icon-upload"></i>
+                          <span><span class="icon icon-16 icon-upload" title="upload">&nbsp;</span>Upload</span>
+                          <input data-role="none" id="fileupload" type="file" name="files[]" multiple>
+                        </span>
+                      </div>
+                      <div class="col col-3-5">
+                        <div id="progress">
+                          <div class="bar" style="width: 0%;"></div>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+
+                    <button id="dummy-upload-button" type="button" data-disabled="true" style="display:none;"><strike>Upload</strike></button>
+                    <p class="cookie-warning" style="display:none;">Cookies must be enabled</p>
+
+                  </div>
+                  <div class="image-selection-items">
+                    <ul class="user-images">
+                    </ul>
+                    <ul class="library-images">
+                      
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/above-736879_1280.jpg" data-index="0" style="background-position: 0px 0px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/aircraft-479772_1280.jpg" data-index="1" style="background-position: -80px 0px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/amazing-701679_1280.jpg" data-index="2" style="background-position: -160px 0px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/architecture-22039_1280.jpg" data-index="3" style="background-position: -240px 0px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/background-2276_1280.jpg" data-index="4" style="background-position: 0px -54px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/background-2561_1280.jpg" data-index="5" style="background-position: -80px -54px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/bananas-698608_1280.jpg" data-index="6" style="background-position: -160px -54px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/barley-373360_1280.jpg" data-index="7" style="background-position: -240px -54px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/beach-hut-237489_1280.jpg" data-index="8" style="background-position: 0px -108px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/beautiful-701678_1280.jpg" data-index="9" style="background-position: -80px -108px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/biker-384920_1280.jpg" data-index="10" style="background-position: -160px -108px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/bl_15826.jpg" data-index="11" style="background-position: -240px -108px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/bl_16510.jpg" data-index="12" style="background-position: 0px -162px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/bl_310.jpg" data-index="13" style="background-position: -80px -162px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/bokeh-715283_1280.jpg" data-index="14" style="background-position: -160px -162px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/bora-bora-685303_1280.jpg" data-index="15" style="background-position: -240px -162px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/bora-bora-701857_1280.jpg" data-index="16" style="background-position: 0px -216px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/border-collie-667488_1280.jpg" data-index="17" style="background-position: -80px -216px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/br_2225.jpg" data-index="18" style="background-position: -160px -216px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/budapest-655216_1280.jpg" data-index="19" style="background-position: -240px -216px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/butterfly-730430_1280.jpg" data-index="20" style="background-position: 0px -270px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/car-604019_1280.jpg" data-index="21" style="background-position: -80px -270px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/central-park-142894_1280.jpg" data-index="22" style="background-position: -160px -270px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/chain-690088_1280.jpg" data-index="23" style="background-position: -240px -270px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/chainlink-690503_1280.jpg" data-index="24" style="background-position: 0px -324px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/chicago-690364_1280.jpg" data-index="25" style="background-position: -80px -324px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/chioggia-571381_1280.jpg" data-index="26" style="background-position: -160px -324px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/city-647400_1280.jpg" data-index="27" style="background-position: -240px -324px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/city-690332_1280.jpg" data-index="28" style="background-position: 0px -378px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/city-691279_1280.jpg" data-index="29" style="background-position: -80px -378px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/city-698616_1280.jpg" data-index="30" style="background-position: -160px -378px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/coastal-landscape-356767_1280.jpg" data-index="31" style="background-position: -240px -378px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/colored-pencils-686679_1280.jpg" data-index="32" style="background-position: 0px -432px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/cube-689618_1280.jpg" data-index="33" style="background-position: -80px -432px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/cycling-655565_1280.jpg" data-index="34" style="background-position: -160px -432px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/dinner-table-663435_1280.jpg" data-index="35" style="background-position: -240px -432px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/dirt-bike-690770_1280.jpg" data-index="36" style="background-position: 0px -486px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/divers-681516_1280.jpg" data-index="37" style="background-position: -80px -486px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/document-428331_1280.jpg" data-index="38" style="background-position: -160px -486px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/document-428338_1280.jpg" data-index="39" style="background-position: -240px -486px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/earth-11009_1280.jpg" data-index="40" style="background-position: 0px -540px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/eat-321671_1280.jpg" data-index="41" style="background-position: -80px -540px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/entrepreneur-593358_1280.jpg" data-index="42" style="background-position: -160px -540px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/euro-163475_1280.jpg" data-index="43" style="background-position: -240px -540px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/flame-726268_1280.jpg" data-index="44" style="background-position: 0px -594px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/flower-729514_1280.jpg" data-index="45" style="background-position: -80px -594px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/font-705667_1280.jpg" data-index="46" style="background-position: -160px -594px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/girl-429380_1280.jpg" data-index="47" style="background-position: -240px -594px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/girls-685787_1280.jpg" data-index="48" style="background-position: 0px -648px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/gold-163519_1280.jpg" data-index="49" style="background-position: -80px -648px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/golden-gate-bridge-388917_1280.jpg" data-index="50" style="background-position: -160px -648px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/gr_1903.jpg" data-index="51" style="background-position: -240px -648px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/gr_22057.jpg" data-index="52" style="background-position: 0px -702px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/gr_23551.jpg" data-index="53" style="background-position: -80px -702px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/gr_41495.jpg" data-index="54" style="background-position: -160px -702px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/green-654402_1280.jpg" data-index="55" style="background-position: -240px -702px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/hands-600497_1280.jpg" data-index="56" style="background-position: 0px -756px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/harley-davidson-459594_1280.jpg" data-index="57" style="background-position: -80px -756px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/hawker-539490_1280.jpg" data-index="58" style="background-position: -160px -756px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/home-office-336373_1280.jpg" data-index="59" style="background-position: -240px -756px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/home-office-336377_1280.jpg" data-index="60" style="background-position: 0px -810px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/lamborghini-593105_1280.jpg" data-index="61" style="background-position: -80px -810px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/lamborghini-618356_1280.jpg" data-index="62" style="background-position: -160px -810px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/lion-721836_1280.jpg" data-index="63" style="background-position: -240px -810px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/machu-pichu-639174_1280.jpg" data-index="64" style="background-position: 0px -864px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/mars-67522_1280.jpg" data-index="65" style="background-position: -80px -864px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/mirroring-711926_1280.jpg" data-index="66" style="background-position: -160px -864px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/mobile-616012_1280.jpg" data-index="67" style="background-position: -240px -864px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/money-256281_1280.jpg" data-index="68" style="background-position: 0px -918px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/money-93206_1280.jpg" data-index="69" style="background-position: -80px -918px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/moon-landing-60582_1280.jpg" data-index="70" style="background-position: -160px -918px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/moorea-681289_1280.jpg" data-index="71" style="background-position: -240px -918px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/mosque-615415_1280.jpg" data-index="72" style="background-position: 0px -972px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/mother-board-581597_1280.jpg" data-index="73" style="background-position: -80px -972px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/motorbike-407186_1280.jpg" data-index="74" style="background-position: -160px -972px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/motorcycle-293571_1280.jpg" data-index="75" style="background-position: -240px -972px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/motorcycle-racer-597913_1280.jpg" data-index="76" style="background-position: 0px -1026px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/mountains-392669_1280.jpg" data-index="77" style="background-position: -80px -1026px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/needle-672396_1280.jpg" data-index="78" style="background-position: -160px -1026px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/new-york-670108_1280.jpg" data-index="79" style="background-position: -240px -1026px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/new-york-city-78181_1280.jpg" data-index="80" style="background-position: 0px -1080px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/office-620822_1280.jpg" data-index="81" style="background-position: -80px -1080px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/or_1282.jpg" data-index="82" style="background-position: -160px -1080px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/or_565.jpg" data-index="83" style="background-position: -240px -1080px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/park-737228_1280.jpg" data-index="84" style="background-position: 0px -1134px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/pier-569314_1280.jpg" data-index="85" style="background-position: -80px -1134px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/plane-170272_1280.jpg" data-index="86" style="background-position: -160px -1134px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/pool-690034_1280.jpg" data-index="87" style="background-position: -240px -1134px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/pool-720697_1280.jpg" data-index="88" style="background-position: 0px -1188px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/railway-692337_640.jpg" data-index="89" style="background-position: -80px -1188px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/rainbow-lorikeet-686100_1280.jpg" data-index="90" style="background-position: -160px -1188px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/road-690087_1280.jpg" data-index="91" style="background-position: -240px -1188px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/rock-540130_1280.jpg" data-index="92" style="background-position: 0px -1242px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/rocket-launch-67643_1280.jpg" data-index="93" style="background-position: -80px -1242px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/salad-652503_1280.jpg" data-index="94" style="background-position: -160px -1242px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/sand-dunes-691431_1280.jpg" data-index="95" style="background-position: -240px -1242px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/sea-701079_1280.jpg" data-index="96" style="background-position: 0px -1296px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/seagull-487726_1280.jpg" data-index="97" style="background-position: -80px -1296px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/shish-kebab-417994_1280.jpg" data-index="98" style="background-position: -160px -1296px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/singapore-431421_1280.jpg" data-index="99" style="background-position: -240px -1296px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/singapore-river-255116_1280.jpg" data-index="100" style="background-position: 0px -1350px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/sky-690293_1280.jpg" data-index="101" style="background-position: -80px -1350px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/skydiving-678168_1280.jpg" data-index="102" style="background-position: -160px -1350px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/smartphone-431230_1280.jpg" data-index="103" style="background-position: -240px -1350px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/smartphone-623722_1280.jpg" data-index="104" style="background-position: 0px -1404px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/smartphone-695164_1280.jpg" data-index="105" style="background-position: -80px -1404px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/soldier-708711_1280.jpg" data-index="106" style="background-position: -160px -1404px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/sparkler-677774_1280.jpg" data-index="107" style="background-position: -240px -1404px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/spike-8743_1280.jpg" data-index="108" style="background-position: 0px -1458px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/statue-of-liberty-267948_1280.jpg" data-index="109" style="background-position: -80px -1458px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/stock-624712_1280.jpg" data-index="110" style="background-position: -160px -1458px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/stop-634941_1280.jpg" data-index="111" style="background-position: -240px -1458px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/strawberries-272812_1280.jpg" data-index="112" style="background-position: 0px -1512px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/summer-192179_1280.jpg" data-index="113" style="background-position: -80px -1512px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/sunset-86214_1280.jpg" data-index="114" style="background-position: -160px -1512px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/taxi-cab-381233_1280.jpg" data-index="115" style="background-position: -240px -1512px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/telephone-586268_1280.jpg" data-index="116" style="background-position: 0px -1566px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/tiger-655593_1280.jpg" data-index="117" style="background-position: -80px -1566px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/tomato-663097_1280.jpg" data-index="118" style="background-position: -160px -1566px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/tomatoes-5356_1280.jpg" data-index="119" style="background-position: -240px -1566px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/tomatoes-73913_1280.jpg" data-index="120" style="background-position: 0px -1620px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/toronto-698496_1280.jpg" data-index="121" style="background-position: -80px -1620px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/traffic-691870_1280.jpg" data-index="122" style="background-position: -160px -1620px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/tree-701688_1280.jpg" data-index="123" style="background-position: -240px -1620px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/tree-701692_1280.jpg" data-index="124" style="background-position: 0px -1674px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/tree-736887_1280.jpg" data-index="125" style="background-position: -80px -1674px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/tulips-708410_1280.jpg" data-index="126" style="background-position: -160px -1674px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/wh_11696.jpg" data-index="127" style="background-position: -240px -1674px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/wh_22125.jpg" data-index="128" style="background-position: 0px -1728px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/wh_45752.jpg" data-index="129" style="background-position: -80px -1728px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/white-tailed-eagle-660907_1280.jpg" data-index="130" style="background-position: -160px -1728px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/woman-506120_1280.jpg" data-index="131" style="background-position: -240px -1728px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/woman-731887_1280.jpg" data-index="132" style="background-position: 0px -1782px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/woodland-656969_1280.jpg" data-index="133" style="background-position: -80px -1782px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/ye_10593.jpg" data-index="134" style="background-position: -160px -1782px;"></span></li>
+                      
+                        
+                        <li class="selectable-item"><span class="img" data-src="/ism/image/thumbnails/ye_25419.jpg" data-index="135" style="background-position: -240px -1782px;"></span></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- IMAGE LINK -->
+                <div class="control-field-image-link">
+
+                  <div class="col col-2-3">
+                    <div class="control-field">
+                      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>Image Link Target</legend>
+                        <input type="radio" name="image-link-target" id="image-link-target-none" value="none" checked="checked">
+                        <label for="image-link-target-none"><span class="icon icon-16 icon-link-none" title="no link">&nbsp;</span></label>
+                        <input type="radio" name="image-link-target" id="image-link-target-_self" value="_self">
+                        <label for="image-link-target-_self"><span class="icon icon-16 icon-link" title="link">&nbsp;</span></label>
+                        <input type="radio" name="image-link-target" id="image-link-target-_blank" value="_blank">
+                        <label for="image-link-target-_blank"><span class="icon icon-16 icon-link-new-tab" title="link - new tab">&nbsp;</span></label>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="col col-1-3 help-tools help-tools-row">
+                    <a class="help" href="#doc-slide-image" title="Learn about slide image settings" data-ajax="false">?</a>
+                  </div>
+                  <div class="clear"></div>
+
+                  <input type="text" name="image-link-href" id="image-link-href" placeholder="http://" data-disabled="true">
+
+                </div>
+              </div>
+
+              <!-- CAPTIONS -->
+              <div class="controls-group-captions" style="display:none;">
+                <div class="control-fields control-fields-tabbed caption-tabs" data-role="tabs">
+                  <div class="control-field">
+                    <div class="col col-1-3">
+                      <input type="checkbox" data-role="flipswitch" name="caption-enable" id="caption-enable" checked="checked" data-mini="true">
+                    </div>
+                    <div class="col col-2-3">
+                      <div class="control-field control-field-disableable">
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                          <legend>Effect</legend>
+                          <input type="radio" name="caption-fx" id="caption-fx-fade" value="fade" checked="checked">
+                          <label for="caption-fx-fade"><span class="icon icon-16 icon-caption-fade-in" title="fade in">&nbsp;</span></label>
+                          <input type="radio" name="caption-fx" id="caption-fx-slide" value="slide">
+                          <label for="caption-fx-slide"><span class="icon icon-16 icon-caption-slide" title="slide">&nbsp;</span></label>
+                          <input type="radio" name="caption-fx" id="caption-fx-pop" value="pop">
+                          <label for="caption-fx-pop"><span class="icon icon-16 icon-caption-pop" title="pop">&nbsp;</span></label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="control-field control-field-delay control-field-disableable">
+                    <div class="col col-1-5">
+                      <label for="caption-delay" class="caption-delay-label"><span class="icon icon-16 icon-timer" title="delay (ms)">&nbsp;</span></label>
+                    </div>
+                    <div class="col col-4-5">
+                      <input type="range" name="caption-delay" id="caption-delay" value="0" min="0" max="3000" step="100">
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="col col-3-4">
+                    <div class="control-field control-field-disableable">
+                      <textarea data-clear-btn="true" name="caption-text" id="caption-text" placeholder="type caption text" style="font-family:'Titillium Web';">My slide caption text</textarea>
+                    </div>
+                  </div>
+                  <div class="col col-1-4">
+                    <div class="control-field control-field-disableable">
+                      <input type="button" name="font-toggle" value="font" data-mini="true" data-icon="carat-d" data-iconpos="bottom" class="font-toggle">
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="font-panel font-panel-hidden">
+                    <div class="control-field control-field-disableable">
+                      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>Font Size</legend>
+                        <input type="radio" name="caption-size" id="caption-size-tiny" value="tiny">
+                        <label for="caption-size-tiny"><span class="icon icon-16 icon-font-size-tiny" title="tiny">&nbsp;</span></label>
+                        <input type="radio" name="caption-size" id="caption-size-small" value="small">
+                        <label for="caption-size-small"><span class="icon icon-16 icon-font-size-small" title="small">&nbsp;</span></label>
+                        <input type="radio" name="caption-size" id="caption-size-medium" value="medium" checked="checked">
+                        <label for="caption-size-medium"><span class="icon icon-16 icon-font-size-medium" title="medium">&nbsp;</span></label>
+                        <input type="radio" name="caption-size" id="caption-size-large" value="large">
+                        <label for="caption-size-large"><span class="icon icon-16 icon-font-size-large" title="large">&nbsp;</span></label>
+                        <input type="radio" name="caption-size" id="caption-size-huge" value="huge">
+                        <label for="caption-size-huge"><span class="icon icon-16 icon-font-size-huge" title="huge">&nbsp;</span></label>
+                        <input type="radio" name="caption-size" id="caption-size-massive" value="massive">
+                        <label for="caption-size-massive"><span class="icon icon-16 icon-font-size-massive" title="massive">&nbsp;</span></label>
+                      </fieldset>
+                    </div>
+                    <div class="control-field control-field-disableable font-selection">
+                      <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                        <legend>Font</legend>
+                        
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-0" value="sans-serif" checked="checked">
+                          
+                          <label for="caption-font-0">sans-serif (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-1" value="Open Sans">
+                          
+                          <label for="caption-font-1">Open Sans (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-2" value="Roboto">
+                          
+                          <label for="caption-font-2">Roboto (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-3" value="Lato">
+                          
+                          <label for="caption-font-3">Lato (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-4" value="Oswald">
+                          
+                          <label for="caption-font-4">Oswald (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-5" value="Roboto Condensed">
+                          
+                          <label for="caption-font-5">Roboto Condensed (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-6" value="Source Sans Pro">
+                          
+                          <label for="caption-font-6">Source Sans Pro (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-7" value="PT Sans">
+                          
+                          <label for="caption-font-7">PT Sans (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-8" value="Open Sans Condensed">
+                          
+                          <label for="caption-font-8">Open Sans Condensed (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-9" value="Raleway">
+                          
+                          <label for="caption-font-9">Raleway (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-10" value="Droid Sans">
+                          
+                          <label for="caption-font-10">Droid Sans (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-11" value="Montserrat">
+                          
+                          <label for="caption-font-11">Montserrat (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-12" value="Ubuntu">
+                          
+                          <label for="caption-font-12">Ubuntu (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-13" value="PT Sans Narrow">
+                          
+                          <label for="caption-font-13">PT Sans Narrow (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-14" value="Arimo">
+                          
+                          <label for="caption-font-14">Arimo (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-15" value="Noto Sans">
+                          
+                          <label for="caption-font-15">Noto Sans (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-16" value="Yanone Kaffeesatz">
+                          
+                          <label for="caption-font-16">Yanone Kaffeesatz (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-17" value="Titillium Web">
+                          
+                          <label for="caption-font-17">Titillium Web (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-18" value="Oxygen">
+                          
+                          <label for="caption-font-18">Oxygen (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-19" value="Dosis">
+                          
+                          <label for="caption-font-19">Dosis (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-20" value="Cabin">
+                          
+                          <label for="caption-font-20">Cabin (sans-serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-21" value="serif">
+                          
+                          <label for="caption-font-21">serif (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-22" value="Lora">
+                          
+                          <label for="caption-font-22">Lora (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-23" value="Droid Serif">
+                          
+                          <label for="caption-font-23">Droid Serif (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-24" value="Roboto Slab">
+                          
+                          <label for="caption-font-24">Roboto Slab (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-25" value="Merriweather">
+                          
+                          <label for="caption-font-25">Merriweather (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-26" value="Bitter">
+                          
+                          <label for="caption-font-26">Bitter (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-27" value="PT Serif">
+                          
+                          <label for="caption-font-27">PT Serif (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-28" value="Arvo">
+                          
+                          <label for="caption-font-28">Arvo (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-29" value="Vollkorn">
+                          
+                          <label for="caption-font-29">Vollkorn (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-30" value="Bree Serif">
+                          
+                          <label for="caption-font-30">Bree Serif (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-31" value="Noto Serif">
+                          
+                          <label for="caption-font-31">Noto Serif (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-32" value="Libre Baskerville">
+                          
+                          <label for="caption-font-32">Libre Baskerville (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-33" value="Rokkitt">
+                          
+                          <label for="caption-font-33">Rokkitt (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-34" value="Alegreya">
+                          
+                          <label for="caption-font-34">Alegreya (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-35" value="Crimson Text">
+                          
+                          <label for="caption-font-35">Crimson Text (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-36" value="Crete Round">
+                          
+                          <label for="caption-font-36">Crete Round (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-37" value="Sanchez">
+                          
+                          <label for="caption-font-37">Sanchez (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-38" value="EB Garamond">
+                          
+                          <label for="caption-font-38">EB Garamond (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-39" value="Josefin Slab">
+                          
+                          <label for="caption-font-39">Josefin Slab (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-40" value="Noticia Text">
+                          
+                          <label for="caption-font-40">Noticia Text (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-41" value="Old Standard TT">
+                          
+                          <label for="caption-font-41">Old Standard TT (serif)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-42" value="Lobster">
+                          
+                          <label for="caption-font-42">Lobster (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-43" value="Poiret One">
+                          
+                          <label for="caption-font-43">Poiret One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-44" value="Abril Fatface">
+                          
+                          <label for="caption-font-44">Abril Fatface (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-45" value="Sigmar One">
+                          
+                          <label for="caption-font-45">Sigmar One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-46" value="Chewy">
+                          
+                          <label for="caption-font-46">Chewy (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-47" value="Patua One">
+                          
+                          <label for="caption-font-47">Patua One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-48" value="Bangers">
+                          
+                          <label for="caption-font-48">Bangers (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-49" value="Lobster Two">
+                          
+                          <label for="caption-font-49">Lobster Two (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-50" value="Playball">
+                          
+                          <label for="caption-font-50">Playball (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-51" value="Passion One">
+                          
+                          <label for="caption-font-51">Passion One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-52" value="Righteous">
+                          
+                          <label for="caption-font-52">Righteous (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-53" value="Bevan">
+                          
+                          <label for="caption-font-53">Bevan (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-54" value="Special Elite">
+                          
+                          <label for="caption-font-54">Special Elite (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-55" value="Alfa Slab One">
+                          
+                          <label for="caption-font-55">Alfa Slab One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-56" value="Comfortaa">
+                          
+                          <label for="caption-font-56">Comfortaa (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-57" value="Changa One">
+                          
+                          <label for="caption-font-57">Changa One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-58" value="Luckiest Guy">
+                          
+                          <label for="caption-font-58">Luckiest Guy (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-59" value="Fugaz One">
+                          
+                          <label for="caption-font-59">Fugaz One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-60" value="Fredoka One">
+                          
+                          <label for="caption-font-60">Fredoka One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-61" value="Squada One">
+                          
+                          <label for="caption-font-61">Squada One (display)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-62" value="Indie Flower">
+                          
+                          <label for="caption-font-62">Indie Flower (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-63" value="Shadows Into Light">
+                          
+                          <label for="caption-font-63">Shadows Into Light (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-64" value="Pacifico">
+                          
+                          <label for="caption-font-64">Pacifico (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-65" value="Dancing Script">
+                          
+                          <label for="caption-font-65">Dancing Script (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-66" value="Gloria Hallelujah">
+                          
+                          <label for="caption-font-66">Gloria Hallelujah (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-67" value="Amatic SC">
+                          
+                          <label for="caption-font-67">Amatic SC (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-68" value="Architects Daughter">
+                          
+                          <label for="caption-font-68">Architects Daughter (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-69" value="Kaushan Script">
+                          
+                          <label for="caption-font-69">Kaushan Script (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-70" value="Coming Soon">
+                          
+                          <label for="caption-font-70">Coming Soon (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-71" value="Covered By Your Grace">
+                          
+                          <label for="caption-font-71">Covered By Your Grace (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-72" value="Courgette">
+                          
+                          <label for="caption-font-72">Courgette (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-73" value="Rock Salt">
+                          
+                          <label for="caption-font-73">Rock Salt (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-74" value="Shadows Into Light Two">
+                          
+                          <label for="caption-font-74">Shadows Into Light Two (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-75" value="Satisfy">
+                          
+                          <label for="caption-font-75">Satisfy (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-76" value="Pinyon Script">
+                          
+                          <label for="caption-font-76">Pinyon Script (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-77" value="Permanent Marker">
+                          
+                          <label for="caption-font-77">Permanent Marker (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-78" value="Handlee">
+                          
+                          <label for="caption-font-78">Handlee (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-79" value="Crafty Girls">
+                          
+                          <label for="caption-font-79">Crafty Girls (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-80" value="Marck Script">
+                          
+                          <label for="caption-font-80">Marck Script (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-81" value="Great Vibes">
+                          
+                          <label for="caption-font-81">Great Vibes (handwriting)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-82" value="monospace">
+                          
+                          <label for="caption-font-82">monospace (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-83" value="Inconsolata">
+                          
+                          <label for="caption-font-83">Inconsolata (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-84" value="Source Code Pro">
+                          
+                          <label for="caption-font-84">Source Code Pro (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-85" value="Droid Sans Mono">
+                          
+                          <label for="caption-font-85">Droid Sans Mono (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-86" value="Ubuntu Mono">
+                          
+                          <label for="caption-font-86">Ubuntu Mono (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-87" value="VT323">
+                          
+                          <label for="caption-font-87">VT323 (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-88" value="Cousine">
+                          
+                          <label for="caption-font-88">Cousine (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-89" value="PT Mono">
+                          
+                          <label for="caption-font-89">PT Mono (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-90" value="Anonymous Pro">
+                          
+                          <label for="caption-font-90">Anonymous Pro (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-91" value="Nova Mono">
+                          
+                          <label for="caption-font-91">Nova Mono (monospace)</label>
+                        
+                          
+                          <input type="radio" name="caption-font" id="caption-font-92" value="Fira Mono">
+                          
+                          <label for="caption-font-92">Fira Mono (monospace)</label>
+                        
+                      </fieldset>
+                    </div>
+                  </div>
+
+                  <!-- Caption Positioning-->
+                  <div class="control-field-caption-positioning">
+                    <div class="col col-1-5">
+                      <div class="control-field control-field-disableable">
+                        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                          <legend>Shape</legend>
+                          <input type="radio" name="caption-shape" id="caption-shape-square" value="square">
+                          <label for="caption-shape-square"><span class="icon icon-16 icon-caption-shape-square" title="square corners">&nbsp;</span></label>
+                          <input type="radio" name="caption-shape" id="caption-shape-rounded" value="rounded" checked="checked">
+                          <label for="caption-shape-rounded"><span class="icon icon-16 icon-caption-shape-rounded" title="rounded corners">&nbsp;</span></label>
+                          <input type="radio" name="caption-shape" id="caption-shape-superround" value="superround">
+                          <label for="caption-shape-superround"><span class="icon icon-16 icon-caption-shape-super-round" title="super round corners">&nbsp;</span></label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="col col-3-5 col-pad-both">
+                      <div class="control-field control-field-disableable">
+                        <div class="caption-positioner">
+                          <div class="caption-box">abc</div>
+                        </div>
+                      </div>
+                      <div class="control-field control-field-disableable control-field-slider control-field-caption-pos-h">
+                        <input type="range" name="caption-pos-h" id="caption-pos-h" value="5" min="0" max="90" step="1">
+                      </div>
+                      <div class="control-field control-field-disableable control-field-slider control-field-caption-pos-v">
+                        <input type="range" name="caption-pos-v" id="caption-pos-v" value="10" min="0" max="90" step="1">
+                      </div>
+                    </div>
+                    <div class="col col-1-5">
+                      <div class="control-field control-field-disableable">
+                        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                          <legend>Border</legend>
+                          <input type="radio" name="caption-border" id="caption-border-none" value="none" checked="checked">
+                          <label for="caption-border-none"><span class="icon icon-16 icon-border-none" title="no border">&nbsp;</span></label>
+                          <input type="radio" name="caption-border" id="caption-border-thin" value="thin">
+                          <label for="caption-border-thin"><span class="icon icon-16 icon-border-thin" title="thin border">&nbsp;</span></label>
+                          <input type="radio" name="caption-border" id="caption-border-thick" value="thick">
+                          <label for="caption-border-thick"><span class="icon icon-16 icon-border-thick" title="thick border">&nbsp;</span></label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="col col-1-2">
+                    <div class="control-field control-field-disableable">
+                      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>Color</legend>
+                        <input type="radio" name="caption-color" id="caption-color-white-on-black" value="white-on-black" checked="checked">
+                        <label for="caption-color-white-on-black"><span class="icon icon-16 icon-color-white-on-black" title="white text on black background">&nbsp;</span></label>
+                        <input type="radio" name="caption-color" id="caption-color-black-on-white" value="black-on-white">
+                        <label for="caption-color-black-on-white"><span class="icon icon-16 icon-color-black-on-white" title="black text on white background">&nbsp;</span></label>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="col col-1-2">
+                    <div class="control-field control-field-disableable">
+                      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>Trans</legend>
+                        <input type="radio" name="caption-trans" id="caption-trans-40" value="40">
+                        <label for="caption-trans-40"><span class="icon icon-16 icon-opacity-40" title="40% opacity">&nbsp;</span></label>
+                        <input type="radio" name="caption-trans" id="caption-trans-70" value="70" checked="checked">
+                        <label for="caption-trans-70"><span class="icon icon-16 icon-opacity-70" title="70% opacity">&nbsp;</span></label>
+                        <input type="radio" name="caption-trans" id="caption-trans-100" value="100">
+                        <label for="caption-trans-100"><span class="icon icon-16 icon-opacity-100" title="100% opacity">&nbsp;</span></label>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="col col-2-3">
+                    <div class="control-field control-field-disableable">
+                      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>Caption Link Target</legend>
+                        <input type="radio" name="caption-link-target" id="caption-link-target-none" value="none" checked="checked">
+                        <label for="caption-link-target-none"><span class="icon icon-16 icon-link-none" title="no link">&nbsp;</span></label>
+                        <input type="radio" name="caption-link-target" id="caption-link-target-_self" value="_self">
+                        <label for="caption-link-target-_self"><span class="icon icon-16 icon-link" title="link">&nbsp;</span></label>
+                        <input type="radio" name="caption-link-target" id="caption-link-target-_blank" value="_blank">
+                        <label for="caption-link-target-_blank"><span class="icon icon-16 icon-link-new-tab" title="link - new tab">&nbsp;</span></label>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="col col-1-3 help-tools help-tools-row">
+                    <a class="help" href="#doc-captions" title="Learn about captions" data-ajax="false">?</a>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="control-field control-field-disableable">
+                    <input type="text" name="caption-link-href" id="caption-link-href" placeholder="http://" data-disabled="true">
+                  </div>
+                </div>
+
+              </div>
+              <!-- end of CAPTIONS -->
+
+            </div>
+            <!-- end of .controls-group-slides -->
+
+            <div class="controls-group controls-group-id">
+              <div class="col col-1-2">
+                <div class="control-field">
+                  <label for="element-id">Slider element ID</label>
+                </div>
+              </div>
+              <div class="col col-1-3">
+                <div class="control-field">
+                  <input type="text" name="element-id" id="element-id" placeholder="Slider element ID" size="20" value="my-slider">
+                </div>
+              </div>
+              <div class="col col-1-6">
+                <div class="help-tools">
+                  <a class="help" href="#doc-element-id" title="Learn about setting your sliders' element IDs" data-ajax="false">?</a>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+
+            <!--
+            <p>
+              <fb:like data-layout="button" style="vertical-align:top;"></fb:like>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="none" style="vertical-align:top;">Tweet</a>
+              <g:plusone size="medium" annotation="none"></g:plusone>
+            </p>
+            -->
+
+          </div>
+          <!-- end of col 1 -->
+    
+          <div class="col col-1-3 col-2">
+            <div class="controls-group controls-group-dimensions" data-role="collapsible" data-collapsed="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+              <h4>Dimensions <span class="icon icon-32x16 icon-dimensions" title="Dimensions">&nbsp;</span> <a class="help" href="#doc-dimensions" title="Learn how to change width, height and corner rounding" data-ajax="false">?</a></h4>
+              <div class="col col-1-3">
+                <div class="control-field">
+                  <input type="checkbox" name="responsive" id="responsive" checked="checked" data-mini="true">
+                  <label for="responsive"><span class="icon icon-32x16 icon-responsive" title="responsive">&nbsp;</span></label>
+                </div>
+              </div>
+              <div class="col col-2-3">
+                <div class="control-field control-field-slider control-field-slider-width">
+                  <input type="range" name="width" id="width" value="900" min="400" max="1600" step="1">
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="col col-1-3">
+                <div class="control-field">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Height Type</legend>
+                    <input type="radio" name="height-type" id="height-type-px" value="px">
+                    <label for="height-type-px">px</label>
+                    <input type="radio" name="height-type" id="height-type-percent" value="percent" checked="checked">
+                    <label for="height-type-percent">%</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="col col-2-3">
+                <div class="control-field control-field-slider control-field-slider-height control-field-slider-height-px">
+                  <input type="range" name="height-px" id="height-px" value="200" min="100" max="600" step="1">
+                </div>
+                <div class="control-field control-field-slider control-field-slider-height control-field-slider-height-percent">
+                  <input type="range" name="height-percent" id="height-percent" value="25" min="15" max="75" step="1">
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="control-field">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Corners</legend>
+                  <input type="radio" name="corners" id="corners-square" value="square">
+                  <label for="corners-square"><span class="icon icon-32x16 icon-rectangle-large" title="square corners">&nbsp;</span></label>
+                  <input type="radio" name="corners" id="corners-round" value="round" checked="checked">
+                  <label for="corners-round"><span class="icon icon-32x16 icon-rectangle-rounded-large" title="rounded corners">&nbsp;</span></label>
+                  <input type="radio" name="corners" id="corners-superround" value="superround">
+                  <label for="corners-superround"><span class="icon icon-32x16 icon-rectangle-super-round-large" title="super round corners">&nbsp;</span></label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="controls-group controls-group-transitions" data-role="collapsible" data-collapsed="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+              <h4>Transitions <span class="icon icon-32x16 icon-transitions" title="Transitions">&nbsp;</span> <a class="help" href="#doc-transitions" title="Learn about transitions" data-ajax="false">?</a></h4>
+              <div class="control-field">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Transition Type</legend>
+                  <input type="radio" name="transition-type" id="transition-type-instant" value="instant">
+                  <label for="transition-type-instant"><span class="icon icon-16 icon-none" title="instant">&nbsp;</span></label>
+                  <input type="radio" name="transition-type" id="transition-type-slide" value="slide" checked="checked">
+                  <label for="transition-type-slide"><span class="icon icon-32x16 icon-transition-type-slide" title="slide">&nbsp;</span></label>
+                  <input type="radio" name="transition-type" id="transition-type-fade" value="fade">
+                  <label for="transition-type-fade"><span class="icon icon-32x16 icon-transition-type-fade" title="fade">&nbsp;</span></label>
+                  <input type="radio" name="transition-type" id="transition-type-zoom" value="zoom">
+                  <label for="transition-type-zoom"><span class="icon icon-32x16 icon-transition-type-zoom" title="zoom">&nbsp;</span></label>
+                </fieldset>
+              </div>
+              <div class="control-field">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Auto Play</legend>
+                  <input type="radio" name="play-type" id="play-type-manual" value="manual" checked="checked">
+                  <label for="play-type-manual"><span class="icon icon-16 icon-play-manual" title="manual">&nbsp;</span></label>
+                  <input type="radio" name="play-type" id="play-type-once" value="once">
+                  <label for="play-type-once"><span class="icon icon-16 icon-play-once" title="play once">&nbsp;</span></label>
+                  <input type="radio" name="play-type" id="play-type-once-rewind" value="once-rewind">
+                  <label for="play-type-once-rewind"><span class="icon icon-16 icon-play-once-rewind" title="play once and rewind">&nbsp;</span></label>
+                  <input type="radio" name="play-type" id="play-type-loop" value="loop">
+                  <label for="play-type-loop"><span class="icon icon-16 icon-play-loop" title="loop">&nbsp;</span></label>
+                </fieldset>
+              </div>
+              <div class="col col-1-2">
+                <div class="control-field control-field-disableable">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Play Speed</legend>
+                    <input type="radio" name="speed" id="speed-slow" value="slow">
+                    <label for="speed-slow"><span class="icon icon-16 icon-speed-slow" title="slow">&nbsp;</span></label>
+                    <input type="radio" name="speed" id="speed-medium" value="medium" checked="checked">
+                    <label for="speed-medium"><span class="icon icon-16 icon-speed-medium" title="medium">&nbsp;</span></label>
+                    <input type="radio" name="speed" id="speed-fast" value="fast">
+                    <label for="speed-fast"><span class="icon icon-16 icon-speed-fast" title="fast">&nbsp;</span></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="col col-1-2">
+                <div class="control-field">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Image Effect</legend>
+                    <input type="radio" name="image-fx" id="image-fx-none" value="none" checked="checked">
+                    <label for="image-fx-none"><span class="icon icon-16 icon-none" title="no effect">&nbsp;</span></label>
+                    <input type="radio" name="image-fx" id="image-fx-zoompan" value="zoompan">
+                    <label for="image-fx-zoompan"><span class="icon icon-16 icon-fx-zoompan" title="zoom-pan">&nbsp;</span></label>
+                    <input type="radio" name="image-fx" id="image-fx-zoomrotate" value="zoomrotate">
+                    <label for="image-fx-zoomrotate"><span class="icon icon-16 icon-fx-zoomrotate" title="zoom-rotate">&nbsp;</span></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <!--
+              <div class="control-field control-field-disableable">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Pause</legend>
+                  <input type="radio" name="pause" id="pause-never" value="never">
+                  <label for="pause-never"><span class="icon icon-16 icon-pause-never" title="never pause">&nbsp;</span></label>
+                  <input type="radio" name="pause" id="pause-hover" value="hover" checked="checked">
+                  <label for="pause-hover"><span class="icon icon-16 icon-pause-hover" title="pause on hover">&nbsp;</span></label>
+                  <input type="radio" name="pause" id="pause-touch" value="touch">
+                  <label for="pause-touch"><span class="icon icon-16 icon-pause-touch" title="pause on touch">&nbsp;</span></label>
+                </fieldset>
+              </div>
+              -->
+            </div>
+
+            
+<div class="ad-v2-top">
+
+  <!-- v2 top center -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+      style="display:inline-block;width:300px;height:250px"
+      data-ad-client="ca-pub-4226366447966984"
+      data-ad-slot="7284651177"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <!--
+  <a href="//shutterstock.7eer.net/c/166542/276895/1305"><img src="//a.impactradius-go.com/display-ad/1305-276895" border="0" alt="Get Started Now With Shutterstock" width="300" height="250"/></a><img height="0" width="0" src="//shutterstock.7eer.net/i/166542/276895/1305" style="position:absolute;visibility:hidden;" border="0" />
+  -->
+
+</div>
+
+
+            <!--
+            <div style="text-align: center;">
+              <a href="http://ninetyninedesigns.7eer.net/c/167438/177081/3172">
+                <img src="http://adn.impactradius.com/display-ad/3172-177081" border="0" alt="" width="300" height="250"/>
+              </a>
+              <img height="0" width="0" src="http://ninetyninedesigns.7eer.net/i/167438/177081/3172" style="position:absolute;visibility:hidden;" border="0" />
+            </div>
+            -->
+
+          </div>
+          <!-- end of col 2 -->
+
+          <div class="col col-1-3 col-3">
+            <div class="controls-group controls-group-buttons" data-role="collapsible" data-collapsed="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+              <h4>Back / Fwd Buttons <span class="icon icon-32x16 icon-buttons" title="Buttons">&nbsp;</span> <a class="help" href="#doc-buttons" title="Learn about back / forward buttons" data-ajax="false">?</a></h4>
+              <div class="col col-1-3">
+                <div class="control-field">
+                  <input type="checkbox" data-role="flipswitch" name="button-enable" id="button-enable" checked="checked" data-mini="true">
+                </div>
+              </div>
+              <div class="col col-2-3">
+                <div class="control-field control-field-disableable">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Visibility</legend>
+                    <input type="radio" name="button-visibility" id="button-visibility-invisible" value="invisible">
+                    <label for="button-visibility-invisible"><span class="icon icon-16 icon-invisible" title="invisible">&nbsp;</span></label>
+                    <input type="radio" name="button-visibility" id="button-visibility-autohide" value="autohide">
+                    <label for="button-visibility-autohide"><span class="icon icon-16 icon-auto-visible" title="auto hide">&nbsp;</span></label>
+                    <input type="radio" name="button-visibility" id="button-visibility-visible" value="visible" checked="checked">
+                    <label for="button-visibility-visible"><span class="icon icon-16 icon-visible" title="visible">&nbsp;</span></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="col col-1-2">
+                <div class="control-field control-field-disableable">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Icon</legend>
+                    <input type="radio" name="button-icon" id="button-icon-chevron" value="chevron" checked="checked">
+                    <label for="button-icon-chevron"><span class="icon icon-16 icon-chevron" title="chevron">&nbsp;</span></label>
+                    <input type="radio" name="button-icon" id="button-icon-triangle" value="triangle">
+                    <label for="button-icon-triangle"><span class="icon icon-16 icon-triangle" title="triangle">&nbsp;</span></label>
+                    <input type="radio" name="button-icon" id="button-icon-arrow" value="arrow">
+                    <label for="button-icon-arrow"><span class="icon icon-16 icon-arrow" title="arrow">&nbsp;</span></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="col col-1-2">
+                <div class="control-field control-field-disableable">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Size</legend>
+                    <input type="radio" name="button-size" id="button-size-small" value="small">
+                    <label for="button-size-small"><span class="icon icon-8 icon-button-size-small" title="small">&nbsp;</span></label>
+                    <input type="radio" name="button-size" id="button-size-medium" value="medium" checked="checked">
+                    <label for="button-size-medium"><span class="icon icon-12 icon-button-size-medium" title="medium">&nbsp;</span></label>
+                    <input type="radio" name="button-size" id="button-size-large" value="large">
+                    <label for="button-size-large"><span class="icon icon-16 icon-button-size-large" title="large">&nbsp;</span></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="control-field control-field-disableable">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Shape</legend>
+                  <input type="radio" name="button-shape" id="button-shape-none" value="none">
+                  <label for="button-shape-none"><span class="icon icon-16 icon-none" title="none">&nbsp;</span></label>
+                  <input type="radio" name="button-shape" id="button-shape-square" value="square">
+                  <label for="button-shape-square"><span class="icon icon-16 icon-square" title="square">&nbsp;</span></label>
+                  <input type="radio" name="button-shape" id="button-shape-circle" value="circle" checked="checked">
+                  <label for="button-shape-circle"><span class="icon icon-16 icon-circle" title="circle">&nbsp;</span></label>
+                  <input type="radio" name="button-shape" id="button-shape-semi-circle" value="semi-circle">
+                  <label for="button-shape-semi-circle"><span class="icon icon-16 icon-semi-circle" title="semi-circle">&nbsp;</span></label>
+                  <input type="radio" name="button-shape" id="button-shape-full-height" value="full-height">
+                  <label for="button-shape-full-height"><span class="icon icon-16 icon-rectangle-vertical" title="full height">&nbsp;</span></label>
+                </fieldset>
+              </div>
+              <div class="control-field control-field-disableable">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Color</legend>
+                  <input type="radio" name="button-color" id="button-color-white-on-black" value="white-on-black" checked="checked">
+                  <label for="button-color-white-on-black"><span class="icon icon-16 icon-button-w-b" title="white on black">&nbsp;</span></label>
+                  <input type="radio" name="button-color" id="button-color-black-on-white" value="black-on-white">
+                  <label for="button-color-black-on-white"><span class="icon icon-16 icon-button-b-w" title="black on white">&nbsp;</span></label>
+                  <input type="radio" name="button-color" id="button-color-white-on-white" value="white-on-white">
+                  <label for="button-color-white-on-white"><span class="icon icon-16 icon-button-w-w" title="white on white">&nbsp;</span></label>
+                  <input type="radio" name="button-color" id="button-color-black-on-black" value="black-on-black">
+                  <label for="button-color-black-on-black"><span class="icon icon-16 icon-button-b-b" title="black on black">&nbsp;</span></label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="controls-group controls-group-radios" data-role="collapsible" data-collapsed="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+              <h4>Radio Buttons <span class="icon icon-32x16 icon-radios" title="Radio buttons">&nbsp;</span> <a class="help" href="#doc-radios" title="Learn about radio buttons" data-ajax="false">?</a></h4>
+              <div class="col col-1-3">
+                <div class="control-field">
+                  <input type="checkbox" data-role="flipswitch" name="radio-enable" id="radio-enable" checked="checked" data-mini="true">
+                </div>
+              </div>
+              <div class="col col-2-3">
+                <div class="control-field control-field-disableable">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Type</legend>
+                    <input type="radio" name="radio-type" id="radio-type-buttons" value="button" checked="checked">
+                    <label for="radio-type-buttons"><span class="icon icon-16 icon-square-rounded-small" title="buttons">&nbsp;</span></label>
+                    <input type="radio" name="radio-type" id="radio-type-thumbnails" value="thumbnail">
+                    <label for="radio-type-thumbnails"><span class="icon icon-16 icon-rectangle-rounded-small" title="thumbnails">&nbsp;</span></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="col col-1-2">
+                <div class="control-field control-field-disableable">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Shape</legend>
+                    <input type="radio" name="radio-shape" id="radio-shape-square" value="square">
+                    <label for="radio-shape-square"><span class="icon icon-12 icon-radio-square" title="square">&nbsp;</span></label>
+                    <input type="radio" name="radio-shape" id="radio-shape-rounded" value="rounded" checked="checked">
+                    <label for="radio-shape-rounded"><span class="icon icon-12 icon-radio-rounded" title="rounded square">&nbsp;</span></label>
+                    <input type="radio" name="radio-shape" id="radio-shape-circle" value="circle">
+                    <label for="radio-shape-circle"><span class="icon icon-12 icon-radio-circle" title="circular">&nbsp;</span></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="col col-1-2">
+                <div class="control-field control-field-disableable">
+                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Align</legend>
+                    <input type="radio" name="radio-align" id="radio-align-left" value="left">
+                    <label for="radio-align-left"><span class="icon icon-16 icon-radio-align-left" title="left align">&nbsp;</span></label>
+                    <input type="radio" name="radio-align" id="radio-align-center" value="center" checked="checked">
+                    <label for="radio-align-center"><span class="icon icon-16 icon-radio-align-center" title="center align">&nbsp;</span></label>
+                    <input type="radio" name="radio-align" id="radio-align-right" value="right">
+                    <label for="radio-align-right"><span class="icon icon-16 icon-radio-align-right" title="right align">&nbsp;</span></label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="control-field control-field-disableable">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Color</legend>
+                  <input type="radio" name="radio-color" id="radio-color-white" value="white" checked="checked">
+                  <label for="radio-color-white"><span class="icon icon-16 icon-white" title="white">&nbsp;</span></label>
+                  <input type="radio" name="radio-color" id="radio-color-black" value="black">
+                  <label for="radio-color-black"><span class="icon icon-16 icon-black" title="black">&nbsp;</span></label>
+                  <input type="radio" name="radio-color" id="radio-color-white-border" value="white-border">
+                  <label for="radio-color-white-border"><span class="icon icon-16 icon-black-white-border" title="white border">&nbsp;</span></label>
+                  <input type="radio" name="radio-color" id="radio-color-black-border" value="black-border">
+                  <label for="radio-color-black-border"><span class="icon icon-16 icon-white-black-border" title="black border">&nbsp;</span></label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="controls-group controls-group-ad">
+            </div>
+            <button type="button" class="reset-all-button"><span class="icon icon-16 icon-reset" title="reset all">&nbsp;</span> Reset all</button>
+
+            <div class="social-buttons">
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=356606661162641&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="none" style="vertical-align:top;">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div class="fb-like" data-href="http://imageslidermaker.com/blog/how-to-make-a-responsive-image-slider-using-jquery-and-css" data-layout="button" data-action="like" data-show-faces="false" data-share="true" style="vertical-align:top;"></div>
+
+</div>
+
+
+          </div>
+          <!-- end of col 3 -->
+
+          <div class="clear"></div>
+
+        </div> <!-- end of look-and-feel controls -->
+
+      </div> <!-- end of tool container -->
+
+      <div class="container intro">
+
+        <h1>Image Slider Maker Free Generator Tool</h1>
+        <h2>Generate your jQuery CSS3 content slider</h2>
+
+        <p>To get started, use the controls above to adjust your design, upload your own images and use the <em>Download Zip</em> button to get the generated code. Please consult the <a href="#doc-intro" data-ajax="false">documentation</a> below if you need guidance.</p>
+
+        <!--
+        <div class="ad-container ad-container-center">
+          include ad-v2-top
+        </div>
+        -->
+
+      </div> <!-- end of intro -->
+
+      <div class="container generated-output">
+
+        <div class="download-and-example">
+          <div class="col col-1-2 col-pad-right">
+            <form method="POST" action="#" data-ajax="false" class="zip-form">
+              <button type="submit" data-mini="false" data-wrapper-class="zip-button"><span class="icon icon-32 icon-download" title="download">&nbsp;</span> Download Zip</button>
+            </form>
+            <div class="panel zip-options-panel panel-hidden" style="display: none;">
+              <p class="cookie-warning" style="display:none;">Cookies must be enabled</p>
+              <a href="#" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="panel-close-button">Close</a>
+<!--
+              <input type="checkbox" name="zip-email" id="zip-email-checkbox">
+              <label for="zip-email-checkbox">Email the zip to me</label>
+              <div class="email-details" style="display: none;">
+                <input type="text" name="email" placeholder="your email address">
+              </div>
+-->
+              <a data-role="button" href="/imageslidermaker.zip" rel="nofollow" id="zip-link" data-ajax="false">Download Now</a>
+              <button id="dummy-download-now-button" type="button" data-disabled="true" style="display:none;"><strike>Download Now</strike></button>
+              <p id="zip-email-note" style="display: none;">* emails containing zip files can sometimes be delayed by email providers</p>
+            </div>
+            <div class="panel email-zip-confirm-panel panel-hidden" style="display: none;">
+              <a href="#" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="panel-close-button">Close</a>
+              <p>We have emailed your slider to you</p>
+            </div>
+          </div>
+          <div class="col col-1-2 col-pad-left">
+            <form method="POST" action="#" data-ajax="false" class="example-form">
+              <button type="submit" data-mini="false" data-wrapper-class="example-button">Preview my slider in a page <span class="icon icon-32 icon-example" title="example">&nbsp;</span></button>
+            </form>
+            <div class="panel example-options-panel" style="display: none;">
+              <a href="#" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="panel-close-button">Close</a>
+              <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>Page Layout</legend>
+                <input type="radio" name="page-layout" id="page-layout-column" value="c" checked="checked">
+                <label for="page-layout-column">column</label>
+                <input type="radio" name="page-layout" id="page-layout-full-width" value="f">
+                <label for="page-layout-full-width">full width</label>
+              </fieldset>
+              <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>Background Color</legend>
+                <input type="radio" name="page-bg" id="page-bg-white" value="w" checked="checked">
+                <label for="page-bg-white">white</label>
+                <input type="radio" name="page-bg" id="page-bg-black" value="b">
+                <label for="page-bg-black">black</label>
+              </fieldset>
+              <a data-role="button" href="/example.html?l=c&b=w" target="_blank" rel="nofollow" id="example-link" data-ajax="false">Show me</a>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div> <!-- end of download-and-exmaple -->
+
+        <p class="pointer-advice">Use this button to download your slider code &mdash; everything you need is contained in the zip file.</p>
+
+        <div class="help-tools">
+          <a class="help" href="#doc-download" title="Learn about how to download and test your generated slider" data-ajax="false">?</a>
+        </div>
+     
+        <div data-role="collapsible" data-collapsed="true">
+          <h3>Zip file contents</h3>
+          <div class="info">
+            <ul>
+              <li>ism/</li>
+              <ul>
+                <li>css/</li>
+                <ul>
+                  <li>my-slider.css</li>
+                </ul>
+                <li>js/</li>
+                <ul>
+                  <li><a href="ism/js/ism-2.2.min.js" data-ajax="false">ism-2.2.min.js</a></li>
+                </ul>
+                <li>image/</li>
+                <ul>
+                  <li>slides/</li>
+                  <ul id="dir-structure-images">
+                    <li><a href="/ism/image/slides/city-690332_1280.jpg" target="_blank" data-ajax="false">city-690332_1280.jpg</a></li>
+                    <li><a href="/ism/image/slides/bora-bora-685303_1280.jpg" target="_blank" data-ajax="false">bora-bora-685303_1280.jpg</a></li>
+                    <li><a href="/ism/image/slides/pier-569314_1280.jpg" target="_blank" data-ajax="false">pier-569314_1280.jpg</a></li>
+                  </ul>
+                </ul>
+              </ul>
+            </ul>
+          </div> <!-- end of info -->
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true">
+          <h3>Markup preview</h3>
+
+          <div class="help-tools">
+            <a class="help" href="#doc-output" title="Learn about the outputted code textareas" data-ajax="false">?</a>
+          </div>
+
+          <p>Here's the generated HTML and CSS:</p>
+
+          <div class="output">
+            <div class="col col-3-4">
+              <label for="output-head-html">HTML to paste into head:</label>
+            </div>
+            <div class="col col-1-4">
+              <button data-role="button" type="button" data-mini="true" data-wrapper-class="select-all-button" class="output-select-button"><span class="icon icon-16 icon-select-all" title="select all">&nbsp;</span> Select all</button>
+            </div>
+            <div class="clear"></div>
+            <textarea name="output-head-html" id="output-head-html" value="" data-autogrow="false" spellcheck="false"></textarea>
+          </div>
+
+          <div class="output">
+            <div class="col col-3-4">
+              <label for="output-body-html">HTML to paste into body:</label>
+            </div>
+            <div class="col col-1-4">
+              <button data-role="button" type="button" data-mini="true" data-wrapper-class="select-all-button" class="output-select-button"><span class="icon icon-16 icon-select-all" title="select all">&nbsp;</span> Select all</button>
+            </div>
+            <div class="clear"></div>
+            <textarea name="output-body-html" id="output-body-html" value="" data-autogrow="false" spellcheck="false"></textarea>
+          </div>
+
+          <div class="output">
+            <div class="col col-3-4">
+              <label for="output-css">CSS (save as my-slider.css):</label>
+            </div>
+            <div class="col col-1-4 col-align-right">
+              <button data-role="button" type="button" data-mini="true" data-wrapper-class="select-all-button" class="output-select-button"><span class="icon icon-16 icon-select-all" title="select all">&nbsp;</span> Select all</button>
+            </div>
+            <div class="clear"></div>
+            <textarea name="output-css" id="output-css" value="" data-autogrow="false" spellcheck="false"></textarea>
+          </div>
+
+        </div>
+
+      </div> <!-- end of generated-output -->
+
+    </div> <!-- end of wrap-->
+          
+    <section id="doc-intro">
+      <div class="container">
+
+        <h3>Getting Started</h3>
+
+        <div class="col col-1-2 col-pad-right">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/controls-panels.jpg" alt="Control panels consisting of buttons" />
+            <span class="marker" style="top:3%;left:17%;">1</span>
+            <span class="marker" style="top:14%;left:12%;">2</span>
+            <span class="marker" style="top:38%;left:17%;">3</span>
+            <span class="marker" style="top:20%;left:50%;">4</span>
+            <span class="marker" style="top:55%;left:50%;">5</span>
+            <span class="marker" style="top:20%;right:17%;">6</span>
+            <span class="marker" style="top:62%;right:17%;">7</span>
+            <span class="marker" style="top:89%;right:17%;">8</span>
+          </figure>
+          <ol>
+            <li><b>Slide controls:</b> change, add, remove slides</li>
+            <li><b>Slide image and caption tabs</b></li>
+            <li><b>Slide image or caption controls</b></li>
+            <li><b>Dimensions:</b> adjust width, height and roundness</li>
+            <li><b>Transitions:</b> choose and configure animated transitions</li>
+            <li><b>Back / forward buttons:</b> navigation buttons style / behavior</li>
+            <li><b>Radio buttons:</b> look / behavior radio buttons</li>
+            <li><b>Reset button:</b> reset all setting to defaults</li>
+          </ol>
+        </div>
+        <div class="col col-1-2">
+
+          <p>The design controls are organized across 5 panel segments.
+          Any changes made via these controls will be reflected in the live preview above,
+          in the source code output and will be used to construct the zip file,
+          which you can download at any time.</p>
+
+          <p>If you experiment with the controls, their effect should be evident in most cases.
+          Please refer the more detailed documentation below where it is not obvious,
+          and please get in <a href="/contact" data-ajax="false">contact</a> if you have any difficulties or a question.</p>
+
+        </div>
+        <div class="clear"></div>
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-slides">
+      <div class="container">
+
+        <h3>Slides</h3>
+
+        <figure class="screenshot no-border w-1-3">
+          <img src="/img/screen/slide-controls.png" alt="Slide change, remove and add controls along with image and caption tabs" />
+          <span class="marker" style="top:27%;left:43%;">1</span>
+          <span class="marker" style="top:27%;right:30%;">2</span>
+          <span class="marker" style="bottom:12%;left:45%;">3</span>
+        </figure>
+
+        <ol>
+          <li><b>Slide number:</b> changes the slide and corresponding settings</li>
+          <li><b>Slide Remove/add:</b> decrease or increase number of slides</li>
+          <li><b>Image &amp; caption tabs:</b> change between slide image and caption settings</li>
+        </ol>
+
+        <p>Use the slide number buttons to select the slide you wish to edit.</p>
+
+        <p>The slide add button allows you to incrementally increase the number of slides to a maximum of 10.
+        Use the slide remove button to incrementally decrease the number of slides.</p>
+
+        <p>Use the image / caption tabs to switch between the image, caption 1, caption 2 and caption 3 settings for the active slide.
+        For example, to adjust the image settings for a slide, first select the slide using the slide number buttons,
+        then select the image tab. Likewise, to edit a caption, after selecting a slide, select one of the caption tabs.
+        By default, for each slide, caption 1 is enabled, but captions 2 and 3 disabled.</p>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-slide-image">
+      <div class="container">
+
+        <h3>Slide Images</h3>
+
+        <div class="col col-1-3">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/slide-image-controls.png" alt="Slide image controls showing alignment, background image and hyperlink setting controls" />
+            <span class="marker" style="top:15%;left:27%;">1</span>
+            <span class="marker" style="top:15%;right:27%;">2</span>
+            <span class="marker" style="top:29%;left:50%;">3</span>
+            <span class="marker" style="top:60%;right:14%;">4</span>
+            <span class="marker" style="bottom:14%;left:50%;">5</span>
+          </figure>
+        </div>
+        <div class="col col-2-3 col-pad-left">
+
+          <ol>
+            <li><b>Fit:</b> width / height / stretch</li>
+            <li><b>Align:</b> top / middle / bottom or left / center / right</li>
+            <li><b>Upload:</b> use to upload your images</li>
+            <li><b>Image select:</b> select one image</li>
+            <li><b>Slide link:</b> no link / link / link - new tab</li>
+          </ol>
+
+          <p>When you choose fit to width, the slide image scales to match the width of the slider.
+          You could instead fit an image to the height of your slider or stretch it to fit in both dimensions.</p>
+
+          <p>Use the upload button to upload an image from your computer.
+          You can either select an image from your local file system or drag and drop an image onto the upload button.
+          The progress bar indicates the progress of an upload and will momentarily turn green upon completion.
+          Uploaded images will appear in the image selection panel.</p>
+
+          <p>When you select an image in the image selector it is set as the image of the active slide. </p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-captions">
+      <div class="container">
+
+        <h3>Captions</h3>
+
+        <p>These settings correspond to the active caption tab (and the active slide).</p>
+
+        <div class="col col-1-3">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/caption-controls.png" alt="Caption controls showing settings for display effect, delay, caption text, font, positioning, styling and hyperlink" />
+            <span class="marker" style="top:4%;left:15%;">1</span>
+            <span class="marker" style="top:8%;right:16%;">2</span>
+            <span class="marker" style="top:18%;right:40%;">3</span>
+            <span class="marker" style="top:30%;left:37%;">4</span>
+            <span class="marker" style="top:27%;right:7%;">5</span>
+            <span class="marker" style="top:48%;left:6%;">6</span>
+            <span class="marker" style="top:48%;right:6%;">7</span>
+
+            <span class="marker" style="top:52%;right:48%;">8</span>
+            <span class="marker" style="top:60%;right:48%;">9</span>
+            <span class="marker" style="bottom:30%;left:38%;">10</span>
+            <span class="marker" style="bottom:23%;right:27%;">11</span>
+            <span class="marker" style="bottom:14%;left:50%;">12</span>
+          </figure>
+          <figure class="screenshot no-border">
+            <img src="/img/screen/font-selection-controls.png" alt="Caption font controls with settings for size and font family via a select list" />
+            <span class="marker" style="top:7%;left:50%;">1</span>
+            <span class="marker" style="top:62%;right:7%;">2</span>
+          </figure>
+        </div>
+        <div class="col col-2-3 col-pad-left">
+
+          <ol>
+            <li><b>Enable flipswitch:</b> off / on</li>
+            <li><b>Display effect:</b> fade in / slide in / pop in</li>
+            <li><b>Delay:</b> delay in milliseconds of caption becoming visible</li>
+            <li><b>Caption text:</b> text or HTML content of caption</li>
+            <li><b>Font select toggle:</b> show / hide</li>
+            <li><b>Corner roundness:</b> square / rounded / round</li>
+            <li><b>Border thickness:</b> no border / thin / thick</li>
+            <li><b>Horizontal position:</b> percent from left edge</li>
+            <li><b>Vertical position:</b> percent from top edge</li>
+            <li><b>Color:</b> white text on black or black text on white</li>
+            <li><b>Opacity:</b> 40% / 70% / 100%</li>
+            <li><b>Caption link:</b> no link / link / link - new tab</li>
+          </ol>
+
+          <p>Toggle the flipswitch to enable or disable a caption.
+          Enabled captions will appear at the set delay time (in milliseconds) after the transition to a slide has completed.
+          You can choose the display effect.</p>
+
+          <p>Edit your caption text or HTML in the text area.
+          There is no limit of length, but be aware captions may appear differently across different user platforms if <em>responsive</em> checked.
+          If entering HTML, take care that it is valid to avoid unexpected behavior.
+          Line breaks are respected - they are converted to <em>&lt;br&gt;</em> elements.</p>
+
+          <p>You can style and set the position of each caption.
+          Choose between square or rounded corners, borderless or bordered, color and transparency.
+          Position a caption using the two horizontal and vertical position controls.</p>
+
+          <p>You can set a caption to be a hyperlink, which will either open in the current tab or in a new tab.
+          If you have selected link, use the text box below to enter a URL, path or hash tag.</p>
+
+          <p>Use the font button to show or hide the font size and family selection panel.</p>
+
+          <ol>
+            <li><b>Font size:</b> tiny / small / medium / large / huge / massive</li>
+            <li><b>Font family:</b> select one</li>
+          </ol>
+
+          <p>To set the font family, scroll through the font selection list and select an item.
+          Sans-serif fonts are listed first, followed by serif, display, handwriting and finally, monospace.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-element-id">
+      <div class="container">
+
+        <h3>Setting your slider's ID</h3>
+
+        <p>The slider's top level DIV element is uniquely identified by its <em>id</em> attribute.
+        Each of the selectors in the generated CSS is prefixed by this ID.</p>
+
+        <p>If you would like multiple sliders on one page, then you must set the ID of each slider you create to a unique value.
+        If you require only one slider on your page, then you do not need to set the ID and can safely leave it as its default value.</p>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-dimensions">
+      <div class="container">
+
+        <h3>Dimensions</h3>
+
+        <div class="col col-1-3">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/dimensions-controls.png" alt="Dimensions controls showing settings for responsiveness, width, height and corner roundness" />
+            <span class="marker" style="top:28%;left:20%;">1</span>
+            <span class="marker" style="top:42%;left:55%;">2</span>
+            <span class="marker" style="top:66%;left:17%;">3</span>
+            <span class="marker" style="top:64%;left:55%;">4</span>
+            <span class="marker" style="bottom:17%;right:33%;">5</span>
+          </figure>
+        </div>
+        <div class="col col-2-3 col-pad-left">
+
+          <ol>
+            <li><b>Responsive (on/off):</b> check for slider to fit container's width</li>
+            <li><b>Width (pixels):</b> the width value used if responsive is unchecked</li>
+            <li><b>Height type: </b> pixel value or percentage of width</li>
+            <li><b>Height (px or %): </b> height value control for setting pixel height or aspect ratio</li>
+            <li><b>Corner roundness:</b> square / rounded / super round</li>
+          </ol>
+
+          <p>Responsive means the slider will fill its container's width.
+          If there is no container, such as a parent div element, then the slider will be full page width.
+          If you adjust the width value control the responsive checkbox will become unchecked
+          and the provided value will be used.</p>
+
+          <p>Use the <em>px / %</em> buttons to choose your height units, either pixels (px) or percentage (%) of width.
+          When <em>px</em> is selected the height value control sets the height to a fixed number of pixels.
+          When <em>%</em> is selected the height value control sets the height as a percentage of width.
+          The latter is dynamic, so if responsive is checked the height will automatically adjust it self to maintain the same aspect ratio.
+          Be sure that the images you use are suitable for your width and height settings.
+          If responsive, assert that your images are tall or wide enough to fill the slider across various screen sizes.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-transitions">
+      <div class="container">
+
+        <h3>Transitions</h3>
+
+        <div class="col col-1-3">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/transitions-controls.png" alt="Transitions controls showing settings for transition type, autoplay mode, autoplay speed and image effect" />
+            <span class="marker" style="top:36%;right:19%;">1</span>
+            <span class="marker" style="top:57%;right:35%;">2</span>
+            <span class="marker" style="bottom:26%;left:33%;">3</span>
+            <span class="marker" style="bottom:26%;right:22%;">4</span>
+          </figure>
+        </div>
+        <div class="col col-2-3 col-pad-left">
+
+          <ol>
+            <li><b>Transition type:</b> instant / slide / zoom</li>
+            <li><b>Autoplay:</b> manual (off) / once / once and rewind / loop</li>
+            <li><b>Speed:</b> slow / medium / fast</li>
+            <li><b>Image effect:</b> no effect / zoom-pan / zoom-rotate</li>
+          </ol>
+
+          <p>When set to <em>instant</em> a slide transition is immediate, without animation taking place.
+          If set to <em>slide</em>, during a transition the current and new slides move together horizontally until the new one is fully in view.
+          In <em>fade</em> mode the current slide fades out during which the new one fades in to replace it.
+          <em>Zoom</em> is similar to fade, except the current slide is up scaled during its fade out resulting in a zooming effect.  
+          <!--
+          In <em>zoom</em> mode the current slide fades out whilst increasing in size, giving a zoom effect. 
+          -->
+
+          <p>With autoplay turned on (not set to <em>manual</em>), transitions between slides will happen automatically.
+          If set to <em>once</em> the slides will be displayed in sequence until the last slide, which will remain in place.
+          <em>Once and rewind</em> is similar except after all slides have been sequentially displayed, a transition will take place back to the start.
+          In <em>loop</em> mode transitions will continue indefinitely.</p>
+
+          <p>Auto play will stop if a user manually changes the slide, either by swiping, using the forward/back buttons or radio buttons.</p>
+
+          <p>The speed setting determines the interval between transitions and can be set to <em>slow</em>, <em>medium</em> or <em>fast</em>,
+          where <em>slow</em> has an interval of 10 seconds, <em>medium</em> 7 seconds and <em>fast</em> 4 seconds.</p>
+
+          <p>The image effect is different to the transition type:
+          it is applied to the image between transitions.
+          If set to <em>zoom-pan</em> the image is subtly zoomed and panned.
+          <em>Zoom-rotate</em> is similar, except the image gradually rotates instead of panning.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-buttons">
+      <div class="container">
+
+        <h3>Forward / Back Buttons</h3>
+
+        <div class="col col-1-3">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/buttons-controls.png" alt="Forward and back button controls showing settings for visibility, icon type, size, shape and color" />
+            <span class="marker" style="top:24%;left:16%;">1</span>
+            <span class="marker" style="top:30%;right:17%;">2</span>
+            <span class="marker" style="top:43%;left:32%;">3</span>
+            <span class="marker" style="top:50%;right:7%;">4</span>
+            <span class="marker" style="bottom:30%;right:20%;">5</span>
+            <span class="marker" style="bottom:15%;right:35%;">6</span>
+          </figure>
+        </div>
+        <div class="col col-2-3 col-pad-left">
+
+          <ol>
+            <li><b>Enable:</b> off / on</li>
+            <li><b>Visibility:</b> invisible / auto hide / visible</li>
+            <li><b>Icon type:</b> chevron / triangle / arrow</li>
+            <li><b>Size:</b> small / medium / large</li>
+            <li><b>Shape:</b> no outline / square / circular / semi-circular / full height</li>
+            <li><b>Color:</b> white on black / black on white / white / black</li>
+          </ol>
+
+          <p>The forward / back buttons can be enabled or disabled.
+          When enabled they can be set as visible, where they will always remain visible,
+          set to auto hide when the buttons will only become visible when the user's mouse pointer hovers over the slider,
+          or invisible, meaning the buttons will not be visible, but will still respond to clicks.</p>
+
+          <p>Select the icon, which will be applied to both buttons, the size, shape and color combination.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-radios">
+      <div class="container">
+
+        <h3>Radio Buttons</h3>
+
+        <div class="col col-1-3">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/radios-controls.png" alt="Radio button controls showing settings for type, shape, alignment and color" />
+            <span class="marker" style="top:28%;left:16%;">1</span>
+            <span class="marker" style="top:35%;right:32%;">2</span>
+            <span class="marker" style="top:51%;left:28%;">3</span>
+            <span class="marker" style="top:68%;right:8%;">4</span>
+            <span class="marker" style="bottom:17%;right:35%;">5</span>
+          </figure>
+        </div>
+        <div class="col col-2-3 col-pad-left">
+
+          <ol>
+            <li><b>Enable:</b> off / on</li>
+            <li><b>Type:</b> buttons / image thumbnails</li>
+            <li><b>Shape:</b> square / rounded square / circular</li>
+            <li><b>Align:</b> left / center / right</li>
+            <li><b>Color:</b> white / black / white border / black border</li>
+          </ol>
+
+          <p>The radio buttons can be enabled in addition to the forward / back buttons or instead of.
+          The indicate the current slide with respect to the sequence of all slides.
+          A user can use the radio buttons to navigate between slides.</p>
+
+          <p>When set as thumbnails, the slide images are shown in place of the radio buttons.</p>
+
+          <p>Align them left, centered or right and set their color, optionally with a border.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-download">
+      <div class="container">
+
+        <h3>Download</h3>
+
+        <div class="col col-1-3">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/download-button.png" alt="Download button" />
+            <span class="marker" style="top:8%;left:50%;">1</span>
+          </figure>
+          <figure class="screenshot no-border">
+            <img src="/img/screen/download-options.png" alt="Download options panel" />
+            <span class="marker" style="top:8%;left:50%;">2</span>
+            <span class="marker" style="top:23%;right:20%;">3</span>
+          </figure>
+        </div>
+        <div class="col col-2-3 col-pad-left">
+
+          <ol>
+            <li><b>Download button:</b> this opens the download options panel</li>
+            <li><b>Download options panel:</b> allows you to select your download options</li>
+            <li><b>Email zip to me:</b> check if you would like to receive the zip file in your inbox</li>
+          </ol>
+
+          <p>You can download your slider at any time.
+          Use the <em>Download Zip</em> button, which will open the download options panel.
+          In the options panel, check the <em>Email the Zip to me</em> checkbox and enter your email address if you would like your slider code and images sent to you.
+          In all cases, use the <em>Download Now</em> button to start the download (or/and to receive the email).</p>
+
+          <p>It is advised to keep this page open in your browser while you download and test.
+          Then if you need to make changes, you can do so without starting over.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-example">
+      <div class="container">
+
+        <h3>Test Page</h3>
+
+        <div class="col col-1-3">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/test-page-button.png" alt="Show my slider in a page button" />
+            <span class="marker" style="top:8%;left:50%;">1</span>
+          </figure>
+          <figure class="screenshot no-border">
+            <img src="/img/screen/test-page-options.png" alt="Show my slider in a page options panel" />
+            <span class="marker" style="top:31%;left:52%;">2</span>
+            <span class="marker" style="top:59%;left:42%;">3</span>
+            <span class="marker" style="bottom:22%;right:20%;">4</span>
+          </figure>
+        </div>
+        <div class="col col-2-3 col-pad-left">
+
+          <ol>
+            <li><b>Test page button:</b> opens test page options panel</li>
+            <li><b>Page layout:</b> column width / full page width</li>
+            <li><b>Page background color:</b> white background / black background</li>
+            <li><b>Show me button:</b> this opens your slider in a test page</li>
+          </ol>
+
+          <p>At any time you can use the <em>Show in a page</em> feature to see how your design will appear in a simple web page.
+          After pressing the button, choose the page layout type and background color.
+          If your slider is responsive full width may be a better option.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="doc-output">
+      <div class="container">
+
+        <h3>Generated HTML and CSS Output</h3>
+
+        <div class="col col-1-2">
+          <figure class="screenshot no-border">
+            <img src="/img/screen/html-and-css-code-output.png" alt="Code output panel showing 3 textareas populated with HTML and CSS code" />
+            <span class="marker" style="top:20%;left:50%;">1</span>
+            <span class="marker" style="top:50%;left:50%;">2</span>
+            <span class="marker" style="top:85%;left:50%;">3</span>
+          </figure>
+        </div>
+        <div class="col col-1-2 col-pad-left">
+
+          <ol>
+            <li><b>HTML for head:</b> code to be inserted in head element</li>
+            <li><b>HTML for body:</b> code to be inserted in body element</li>
+            <li><b>CSS:</b> code to go in &lt;style&gt; tags or in separate .css file</li>
+          </ol>
+
+          <p>As an alternative to downloading the zip file, you can copy and paste the HTML markup from these textareas straight into your own web page source.</p>
+
+          <p>The code in outputted here is updated whenever you make a change to any settings.
+          For example, if you add a slide and additional list element will be appended to the body HTML,
+          or if you change the button color the CSS will be modified to reflect the change.</p>
+
+          <p>You can use the <em>Select all</em> buttons to select the entire text content on of the textareas.</p>
+
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="section-footer">
+          <a class="back-to-top" href="#body" data-ajax="false">back to top &#9650;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="ad-columns">
+
+  <div class="container">
+
+    <div class="ads-column ads-column-left">
+
+      
+      <!--
+      <div data-id='57a337ee237091a0484c000a' style='position: relative; width: 300px; height: 600px;' class='sstk_widget'><a href='http://affiliate.shutterstock.com' target='_blank' style='position: absolute;bottom: 0px;left: 13px; line-height: 40px; text-decoration: none;color: #333333; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;'></a><script type='text/javascript'>window._wdata = window._wdata || [];_wdata.push({widget_id: '57a337ee237091a0484c000a', cdn_prefix: '//d3qrz9uuaxc8ej.cloudfront.net', width: '300', height: '600', src: '//widget.shutterstock.com/widget/57a337ee237091a0484c000a', border: true, url: document.URL});(function () {if (typeof (widget) !== 'undefined') return;var nwjs = document.createElement('script'); nwjs.type = 'text/javascript'; nwjs.async = true;nwjs.id = 'widget_script';nwjs.src = '//widget.shutterstock.com/content/js/embed_widget.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nwjs, s);})();</script></div>
+      -->
+
+
+      <!-- v2 left skyscraper -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+          style="display:inline-block;width:300px;height:600px"
+          data-ad-client="ca-pub-4226366447966984"
+          data-ad-slot="5543892779"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+    </div>
+
+    <div class="ads-column ads-column-right">
+
+      <!--
+      <a href="//shutterstock.7eer.net/c/166542/276883/1305"><img src="//a.impactradius-go.com/display-ad/1305-276883" border="0" alt="Get Started Now With Shutterstock" width="300" height="250"/></a><img height="0" width="0" src="//shutterstock.7eer.net/i/166542/276883/1305" style="position:absolute;visibility:hidden;" border="0" />
+      -->
+
+      <!-- v2 right rectangle -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+          style="display:inline-block;width:300px;height:250px"
+          data-ad-client="ca-pub-4226366447966984"
+          data-ad-slot="2806981973"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+</div>
+
+
+    <!--
+    <section class="social">
+      <div class="container">
+
+        <p>
+          <div class="addthis_sharing_toolbox"></div>
+        </p>
+
+        <p><i>Share this page</i></p>
+
+      </div>
+    </section>
+    -->
+
+    <!--
+    <section class="ads">
+      <div class="container">
+
+        <div class="col col-1-2">
+          <div class="ad-container ad-container-center">
+          </div>
+        </div>
+        <div class="col col-1-2">
+          <div class="ad-container ad-container-center">
+          </div>
+        </div>
+        <div class="clear"></div>
+
+      </div>
+    </section>
+    -->
+
+    <footer>
+
+  <div class="container">
+
+    <div class="menu">
+      <ul>
+        <li><a href="/v1" data-ajax="false" target="_blank">Original Version</a></li>
+        <li><a href="/#about" data-ajax="false">About</a></li>
+        <li><a href="/faq" data-ajax="false">FAQ</a></li>
+        <li><a href="/blog" data-ajax="false">Blog</a></li>
+        <li><a href="/privacy" data-ajax="false">Privacy</a></li>
+        <li><a href="/contact" data-ajax="false">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">Copyright &copy; 2013-2016</div>
+
+  </div>
+
+</footer>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34352389-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+</html>
+
+<!-- end of file -->
