@@ -6,14 +6,14 @@ Frontend web application for managing inter-provincial logistics and shipping or
 
 ##  Features
 
-- 📦 Order creation with full sender/receiver/package info
-- 📍 Address input with geolocation support (Mapbox)
-- 💰 MoMo payment integration
-- 🔍 Order status tracking
-- 🧑 User and admin roles
-- 📊 Admin dashboard for managing users/orders
-- 🖼️ Upload images (e.g. delivery proof)
-- 📱 Responsive design
+-  Order creation with full sender/receiver/package info
+-  Address input with geolocation support (Mapbox)
+-  MoMo payment integration
+-  Order status tracking
+-  User and admin roles
+-  Admin dashboard for managing users/orders
+-  Upload images (e.g. delivery proof)
+-  Responsive design
 
 ---
 
